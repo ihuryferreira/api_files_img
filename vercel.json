@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "public": true,
+    "builds": [
+        {
+            "src": "src/api/app.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/.*",
+            "dest": "src/api/app.js"
+        },
+        {
+            "src": "/",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/info",
+            "dest": "/info.html"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
+}

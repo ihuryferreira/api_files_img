@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Projeto</title>
+  <link rel="stylesheet" href="./src/home/css/style.css">
+</head>
+
+<body>
+  <header class="cabecario">
+    <h1>Information System</h1>
+  </header>
+
+  <section>
+    <h1>Pokémon Form</h1>
+    <form id="forms">
+      <input type="hidden" id="id" name="id">
+      <label for="TituloTexto">Adiciona Nome do Pokémon:</label>
+      <input type="text" name="titleText" id="TituloTexto">
+      <label for="img">Adiciona Arquivo de Imagem do Pokémon:</label>
+      <input type="file" name="imagem" id="img" accept="image/*">
+      <label for="textoParagrapho">Adiciona Descrição do Pokémon.</label>
+      <textarea rows="7" cols="50" id="textParagraph"></textarea>
+      <button type="submit">Salvar os Dados.</button>
+    </form>
+  </section>
+
+  <script src="./src/home/js/index.js"></script>
+</body>
+
+</html>
